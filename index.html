@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encrypt&Decrypt</title>
+</head>
+<body>
+    <div class="content">
+        <div class="title-div">
+            <h1>Cryptography</h1>
+            <p></p>
+        </div>
+        <div class="input-output">
+
+            <div class="input-div">
+                <form id="cryptForm">
+                    
+                    <div class="text-div">
+                        <label>Message to Encrypt:</label>
+                        <textarea name="text" id="text" cols="30" rows="10"></textarea> 
+                    </div>
+                    <br><br><br>
+
+                    <div class="key-div">
+                        <label>Encryption Key:   </label>
+                        <input type="text" name="key" id="key" placeholder="Secret key here...">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="algo-task-div">
+                        <select name="" id="algorithm">
+                            <option value="AES">AES</option>
+                            <option value="3DES">3DES</option>
+                            <option value="OTP">OTP</option>
+                        </select>
+                        
+                    </div>
+                    <br>
+                
+                    <button class="submit_button" type="submit" id="submit" value="Encrypt">Encrypt</button>
+                        
+                    <button class="copy_paste" id="copy">Copy Encryption</button>
+                    <div class="output-div">
+                        <label >Encrypted Message:</label>
+                        <div class="display-div">
+                        <textarea readonly name="result" id="result" cols="35" rows="10"></textarea>
+                        </div> 
+                    </div>
+
+                </form> 
+
+            </div>
+            <div class="input-output">
+
+                <div class="input-div">
+                    <form id="decryptForm">
+                        
+                        <div class="text-div">
+                            <label>Message to Decrypt:</label>
+                            <textarea name="text1" id="text1" cols="30" rows="10"></textarea> 
+                        </div>
+                        <br><br><br>
+                        
+                        <div class="key-div">
+                            <label>Decryption Key:   </label>
+                            <input type="text" name="key" id="key" placeholder="Secret key here...">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="algo-task-div">
+                            <select name="" id="algorithm">
+                                <option value="AES">AES</option>
+                                <option value="3DES">3DES</option>
+                                <option value="OTP">OTP</option>
+                            </select>
+                           
+                        </div>
+                        <br>
+                    
+                        <button class="submit_button" type="submit" id="submit" value ="Decrypt">Decrypt</button>
+                        <button class="copy_paste" type="button" class="" id="paste">Paste Decryption</button>
+                        <div class="output-div">
+                            <label >Decrypted Message:</label>
+                            <div class="display-div">
+                            <textarea readonly name="result" id="result1" cols="35" rows="10"></textarea>
+                            </div> 
+                        </div>
+                        
+                    </form> 
+    
+                </div>
+            
+
+        </div>
+    </div>
+
+    <script src="./onetimepad.js"></script>
+    <script src="./crypto-js.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
