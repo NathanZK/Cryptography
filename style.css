@@ -1,0 +1,67 @@
+html {
+    background-color: #192128;
+    font-family: 'Signika Negative', sans-serif;
+    color: white
+}
+
+.content {
+    max-width: 700px;
+    
+    flex-direction: column;
+    justify-content: center;
+    background-color: #192128;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 0.7rem;
+}
+.title-div{
+    text-align: center;
+    justify-content: center;
+}
+.text-div{
+    font-size: 25px;
+}
+
+.submit_button{
+    background-color: rgb(63, 144, 131);
+    color: white;
+}
+.copy_paste{
+    background-color: rgb(71, 95, 48);
+    color: whitesmoke;
+    font-size: 15px
+}
+
+.input-output {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.input-div{
+
+    padding:20px;
+    min-width: 30%;
+    justify-content: center;
+}
+.key-div{
+    display:flex;
+    justify-content: center;
+}
+.text-div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.submit_button{
+    width: 90%;
+    height: 25pt;
+    font-size: medium;
+    margin: 3px auto;
+    border-radius: 0.7rem;
+}
+.output-div{
+    padding:20px;
+    min-width: 30%;
+    justify-content: center;
+}
